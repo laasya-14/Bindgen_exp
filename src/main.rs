@@ -1,10 +1,10 @@
 pub mod foo;
 
-use foo::{T, print_value};
+use foo::{T,get_value, print_value};
 
 fn main() {
     unsafe{
-        let t:T = T{x: 1, y: 2};
+        let t:T = get_value();
         print_value(t);
     }
     
